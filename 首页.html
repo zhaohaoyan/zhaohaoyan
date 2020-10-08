@@ -1,0 +1,326 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页/ホーム</title>
+    <link rel="stylesheet" href="information.css">
+    <style>
+        .slide-bar{
+            width:50px;
+            height:100px;
+            margin-left:600px;
+            position:absolute;
+            left:50%;
+            top:500px;
+            background-color: rgb(235, 182, 84);
+            border-radius: 10%;
+        }
+        .img0{
+            margin-left: 5px;
+            border-radius: 15%;
+            cursor: pointer; 
+            
+        }
+        .goBack{
+            margin-left: 5px;
+            position:absolute;
+            bottom:0;
+            display:none;
+            font-size: 15px;
+            font-weight: 900;
+            border-radius: 15%;
+            cursor: pointer; 
+            background-color: rgb(235, 182, 60);
+        }
+        </style>    
+</head>
+<body>
+    <header class="header">
+        <div class="header-first">
+            <a href="#">
+                首页
+            </a>
+        </div>
+        <div class="header-second">
+            <a href="kehu.html">
+                个人中心
+            </a>
+        </div>
+        <div class="header-third">
+            <a  href="#">
+                联系客服
+            </a>
+        </div>
+    </header>
+    <div class="top">
+        <div class="top-one">
+            <input type="text" placeholder="姓名/专业/学历..." class="search"> <button class="btn">搜索</button>
+        </div>
+    </div>
+    <script>
+        var search=document.querySelector('input');
+        document.addEventListener('keyup',function(e){
+            //console.log(e.keyCode);
+            if(e.keyCode===83){
+                search.focus();
+            }
+        })
+    </script>
+    <div class="banner">
+        <table>
+            <tr>
+                <th>专业</th>
+                <td class="details"> <a href="#">计算机</a></td>
+                <td class="details"> <a href="#">金融</a></td>
+                <td class="details"> <a href="#">医学</a></td>
+                <td class="details"> <a href="#">数学</a></td>
+                <td class="details"> <a href="#">英语</a></td>
+                <td class="details"> <a href="#">会计</a></td>
+                <td class="details"> <a href="#">其他</a></td>
+            </tr>
+            <tr>
+                <th>毕业</th>
+                <td class="details"> <a href="#">2015</a></td>
+                <td class="details"> <a href="#">2016</a></td>
+                <td class="details"> <a href="#">2017</a></td>
+                <td class="details"> <a href="#">2018</a></td>
+                <td class="details"> <a href="#">2019</a></td>
+                <td class="details"> <a href="#">2020</a></td>
+                <td class="details"> <a href="#">其他</a></td>
+            </tr>
+            <tr>
+                <th>语言</th>
+                <td class="details"> <a href="#">日语</a></td>
+                <td class="details"> <a href="#">英语</a></td>
+                <td class="details"> <a href="#">韩语</a></td>
+                <td class="details"> <a href="#">法语</a></td>
+                <td class="details"> <a href="#">德语</a></td>
+                <td class="details"> <a href="#">其他</a></td>
+            </tr>
+            <tr>
+                <th>能力</th>
+                <td class="details"> <a href="#">c/c++</a></td>
+                <td class="details"> <a href="#">java</a></td>
+                <td class="details"> <a href="#">python</a></td>
+                <td class="details"> <a href="#">linux</a></td>
+                <td class="details"> <a href="#">matlab</a></td>
+                <td class="details"> <a href="#">其他</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="slide-bar">
+        <button class="img0">
+            <a href="#">
+                <img border="0" src="images/1046333755.gif" width="37" height="40" alt="">
+            </a>
+        </button>
+        <button class="goBack"><a href="#">返&ensp;回<br />顶&ensp;部</a></button>
+    </div>
+    <div class="main">
+        <div class="one">
+            <div class="one-one" >
+                <a href="qaz.html">
+                <img border="0" src="images/lisi.jpg" alt="" >
+            </a>
+            </div>
+            <div class="one-two">
+                <pre>
+        姓名：李四             性别：男               学历：本科                
+        专业：计算机         语言类别: 英语        计算机语言：c/c++   
+                </pre>
+            </div>
+        </div>
+        <div class="two">
+            <div class="two-one">
+                <a href="qaz.html">
+                <img border="0" src="images/zhanghan.jpg" alt="">
+            </a>
+            </div>
+            <div class="two-two">
+                <pre>
+        姓名：李四             性别：男               学历：本科                
+        专业：计算机         语言类别: 英语        计算机语言：c/c++   
+                </pre>
+            </div>
+        </div>
+        <div class="three">
+            <div class="three-one">
+                <a href="qaz.html">
+                <img border="0" src="images/xiaoxiao.jpg" alt="">
+            </a>
+            </div>
+            <div class="three-two">
+                <pre>
+        姓名：李四             性别：男               学历：本科                
+        专业：计算机         语言类别: 英语        计算机语言：c/c++     
+                </pre>
+            </div>
+        </div>
+        <div class="two">
+            <div class="two-one">
+                <a href="qaz.html">
+                <img border="0" src="images/zhanghan.jpg" alt="">
+            </a>
+            </div>
+            <div class="two-two">
+                   <pre>
+        姓名：李四             性别：男               学历：本科                
+        专业：计算机         语言类别: 英语        计算机语言：c/c++   
+                   </pre>
+            </div>
+        </div>
+        <div class="two">
+            <div class="two-one">
+                <a href="qaz.html">
+                <img border="0" src="images/zhanghan.jpg" alt="">
+            </a>
+            </div>
+            <div class="two-two">
+                   <pre>
+        姓名：李四             性别：男               学历：本科                
+        专业：计算机         语言类别: 英语        计算机语言：c/c++   
+                   </pre>
+            </div>
+        </div>
+        <div class="two">
+            <div class="two-one">
+                <a href="qaz.html">
+                <img border="0" src="images/zhanghan.jpg" alt="">
+            </a>
+            </div>
+            <div class="two-two">
+                   <pre>
+        姓名：李四             性别：男               学历：本科                
+        专业：计算机         语言类别: 英语        计算机语言：c/c++   
+                   </pre>
+            </div>
+        </div>
+        <div class="two">
+            <div class="two-one">
+                <a href="qaz.html">
+                <img border="0" src="images/zhanghan.jpg" alt="">
+            </a>
+            </div>
+            <div class="two-two">
+                   <pre>
+        姓名：李四             性别：男               学历：本科                
+        专业：计算机         语言类别: 英语        计算机语言：c/c++   
+                   </pre>
+            </div>
+        </div> 
+    </div>
+        <div class="two">
+            <div class="two-one">
+                <a href="qaz.html">
+                <img border="0" src="images/zhanghan.jpg" alt="">
+            </a>
+            </div>
+            <div class="two-two">
+                <pre>
+        姓名：李四             性别：男               学历：本科                
+        专业：计算机         语言类别: 英语        计算机语言：c/c++   
+               </pre>
+        </div>
+        </div> 
+    </div>
+    <div class="two">
+        <div class="two-one">
+            <a href="qaz.html">
+            <img border="0" src="images/zhanghan.jpg" alt="">
+        </a>
+        </div>
+        <div class="two-two">
+            <pre>
+        姓名：李四             性别：男               学历：本科                
+        专业：计算机         语言类别: 英语        计算机语言：c/c++   
+           </pre>
+    </div>
+        </div>       
+        </div>
+        <div class="two">
+            <div class="two-one">
+            <a href="qaz.html">
+            <img border="0" src="images/zhanghan.jpg" alt="">
+            </a>
+            </div>
+            <div class="two-two">
+            <pre>
+        姓名：李四             性别：男               学历：本科                
+        专业：计算机         语言类别: 英语        计算机语言：c/c++   
+            </pre>
+            </div>
+        </div>
+        <div class="two">
+            <div class="two-one">
+            <a href="qaz.html">
+            <img border="0" src="images/zhanghan.jpg" alt="">
+            </a>
+            </div>
+            <div class="two-two">
+            <pre>
+        姓名：李四             性别：男               学历：本科                
+        专业：计算机         语言类别: 英语        计算机语言：c/c++   
+            </pre>
+            </div>
+        </div>
+        <div class="two">
+            <div class="two-one">
+            <a href="qaz.html">
+            <img border="0" src="images/zhanghan.jpg" alt="">
+            </a>
+            </div>
+            <div class="two-two">
+            <pre>
+        姓名：李四             性别：男               学历：本科                
+        专业：计算机         语言类别: 英语        计算机语言：c/c++   
+            </pre>
+            </div>
+        </div>
+        <div class="two">
+            <div class="two-one">
+            <a href="qaz.html">
+            <img border="0" src="images/zhanghan.jpg" alt="">
+            </a>
+            </div>
+            <div class="two-two">
+            <pre>
+        姓名：李四             性别：男               学历：本科                
+        专业：计算机         语言类别: 英语        计算机语言：c/c++   
+            </pre>
+            </div>
+        </div>                  
+    </div>
+</body>
+</html>
+<script>
+    var slideBar=document.querySelector(".slide-bar");
+    var banner=document.querySelector(".banner");
+    var bannerTop=banner.offsetTop; //banner到达页面顶部时，页面被卷去的头部的大小，一定要写到滚动的外面
+    var slideBarTop=slideBar.offsetTop-bannerTop;  //固定定位之后，应该变化的数值
+    var main=document.querySelector(".main");
+    var goBack=document.querySelector(".goBack");
+    var mainTop=main.offsetTop;
+
+    //1,页面滚动事件 scroll
+    document.addEventListener("scroll",function () {
+        if (window.pageYOffset >= bannerTop)
+        {
+            slideBar.style.position="fixed";
+            slideBar.style.top=slideBarTop+"px";
+        }
+        else{
+            slideBar.style.position="absolute";
+            slideBar.style.top=500+"px";
+        }
+
+        //2，当页面滚动到main盒子，就显示 goBack 模块（“返回顶部”）
+        if (window.pageYOffset >=mainTop)
+        {
+            goBack.style.display="block";
+        }
+        else{
+            goBack.style.display="none";
+        }
+    })
+
+</script>
