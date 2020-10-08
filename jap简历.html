@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>人事情報</title>
+  <link rel="stylesheet" href="information2.css">
+    <style>
+a {
+  text-decoration: none;
+}
+.header {
+  margin-top: -8px;
+  margin-left: -8px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border: 0.1px #e5e5e5 dotted;
+}
+.header-first {
+  float: left;
+  width: 150px;
+  height: 50px;
+  margin-left: 500px;
+}
+.header-first a {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #6c6c6c;
+}
+.header-second {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin-left: 50px;
+}
+.header-second a {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #6c6c6c;
+}
+.header-third {
+  float: left;
+  width: 300px;
+  height: 50px;
+  margin-left: 1020px;
+  margin-top:-50px;
+}
+.header-third a {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #6c6c6c;
+}      
+     .div {
+        width: 1200px;
+        height: 360px;
+        border:solid 1px gray;
+        display: table;
+        margin:0 auto;
+            }
+            .div1 {
+      display: table-cell;
+      width: 550px;
+      height:360px;
+      background: -webkit-linear-gradient(
+      top,bisque,orange,orangered
+     );
+    }
+    .div1 video {
+            vertical-align: top;
+            position: relative;
+            left: 45px;
+            top: -25px;
+        }
+    .div2 {
+      display: table-cell;
+      width: 450px;
+      height: 360px;
+      background: -webkit-linear-gradient(
+      top,bisque,orange,orangered
+     );
+    }
+    .div3 {
+        display: table-cell;
+      width: 200px;
+      height: 360px;
+      background: -webkit-linear-gradient(
+      top,bisque,orange,orangered
+     );
+     font-size: 20px;
+    }
+    .div4 {
+        height: 50px;
+        width: 100px;
+        position: relative;
+        top: -20px;
+        left:15px;
+        text-align: center;
+    }
+   .div5 {
+     height: 330px;
+     width: 180px;
+        position: relative;
+        top: -15px;
+        left: 6px;
+   }
+   .div6 {
+    height: 50px;
+        width: 100px;
+        position: relative;
+        top: -5px;
+        text-align: center;
+       
+   }
+   .div7 {
+    height: 50px;
+        width: 150px;
+        position: relative;
+        top: -20px;
+        text-align: center;
+   }
+    #wenjian {
+     width: 1200px;
+     height: 150px;
+     background: -webkit-linear-gradient(
+      top,white,#c4c4c4,#a3a3a3
+     );
+     text-align: center;
+     margin:0px auto;
+ }
+ #lan {
+     width: 340px;
+     height: 260px;
+     border: 1px solid black;
+     position: relative;
+    top:10px;
+   left: 30px;
+ }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-first">
+        <a href="ホーム.html">
+          最初のページ 
+        </a>
+    </div>
+    <div class="header-second">
+        <a href="japkehu.html">
+          センター 
+        </a>
+    </div>
+    <div class="header-third">
+        <a  href="#">
+          カスタマー・サービスに連絡する 
+        </a>
+    </div>
+</header>
+  <div class="div">
+  <div class="div1"><div class="div7"><h2>動画リスト</h2></div>
+   <video width="450" height="300" controls="controls">
+    <source src="视频简历.mp4" type="video/mp4" />
+    <source src="视频简历.mp4" type="video/ogg" />
+    <source src="视频简历.mp4" type="video/webm" />
+    <object data="视频简历.mp4" width="450" height="300">
+      <embed src="视频简历.swf" width="450" height="300"/>
+    </object>
+  <video>
+
+  </div>
+  <div class="div2"><div class="div4">
+    <h2>意見欄</h2><input id="lan" type="input" >
+</div></div>
+  <div class ="div3" >
+   <div class="div5">
+     <div class="div6"><h3>メニュー </h3></div>
+      <ul>
+    <li><a  href ="about.html">企業サービス </a></li>
+    <li><a  href ="noticeFrontList.jsp">公告する </a></li>
+    <li><a href ="product.jsp">ニュース </a></li>
+    <li><a  href ="product.html">使用とヘルプ </a></li>
+    <li><a href ="index.html">ユーザー協議とプライバシーポリシー </a></li>
+    <li><a  href ="contact.html" class ="last">詳細</a></li>
+    
+</ul>
+</div>
+</div>    
+</div>
+<form id="wenjian" name="uploadForm" method="POST" 
+        enctype="multipart/form-data" 
+        action="/ProcessServer/FileOperate/fileUpServlet"> 
+        Upload File1:<input type="file" name="file1" size="500"/> 
+        <input type="submit" name="submit" value="送信"> 
+        <input type="reset" name="reset" value="リセット "> 
+     </form> 
+</body>
+</html>

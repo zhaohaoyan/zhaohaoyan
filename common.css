@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 100px;
+  /* background-color: yellow; */
+  line-height: 100px;
+  /* padding-left: 90px; */
+}
+
+.header h1 {
+  float: left;
+  margin-left: 90px;
+}
+
+.header a {
+  float: right;
+  margin-top: 35px;
+  margin-right: 90px;
+  width: 98px;
+  height: 35px;
+  border-radius: 13px;
+  text-align: center;
+  line-height: 35px;
+  background-color: rgba(248, 134, 4, 0.6);
+  text-decoration: none;
+  color: black;
+}
+
+.header a:hover {
+  color: #fff;
+  box-shadow: 10px 10px 10px 10px rgba(177, 95, 2, 0.6) inset;
+}
+
+.center {
+  height: 500px;
+  background-image: linear-gradient(
+    to top left,
+    rgb(238, 163, 65),
+    rgb(248, 134, 4)
+  );
+  /* background-color: red; */
+}
+.login {
+  /* display: inline-block; */
+  margin-right: 100px;
+  margin-top: 100px;
+  float: right;
+  height: 300px;
+  width: 380px;
+  background-color: rgba(248, 246, 245, 0.6);
+  border-radius: 50px;
+  box-shadow: 5px 7px 7px 3px rgba(65, 61, 61, 0.5);
+}
+
+.login span {
+  font-size: 20px;
+  color: black;
+}
+.login .input input {
+  border: 0;
+  height: 33px;
+  width: 196px;
+  background: none;
+  outline: 0;
+  color: black;
+  font-size: 18px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  transition: 0.2s;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(73, 67, 67, 0.795);
+}
+.login .input input:hover {
+  border-bottom-color: rgba(248, 134, 4, 0.6);
+}
+.login .click {
+  /* background-color: green; */
+  height: 70px;
+  width: 252px;
+  margin-top: 40px;
+  margin-left: 69px;
+  /* margin: 20px auto; */
+}
+.click .register {
+  float: left;
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.click a {
+  text-decoration: none;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 2px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: black;
+  transition: 0.2s;
+}
+
+.click .register:hover {
+  box-shadow: 10px 10px 10px 10px rgba(248, 134, 4, 0.6) inset;
+}
+
+.click .action:hover {
+  box-shadow: 10px 10px 10px 10px rgba(248, 134, 4, 0.6) inset;
+}
+
+.bottom {
+  height: 100px;
+  margin: 10px;
+  /* background-color: pink; */
+  text-align: center;
+}
+.bottom a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 20px;
+  color: black;
+}
+.bottom a:hover {
+  color: rgba(248, 134, 4, 0.6);
+}
