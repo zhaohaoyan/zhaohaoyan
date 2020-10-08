@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="information2.css">
+    <style>
+a {
+  text-decoration: none;
+}
+.header {
+  margin-top: -8px;
+  margin-left: -8px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border: 0.1px #e5e5e5 dotted;
+}
+.header-first {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin-left: 500px;
+}
+.header-first a {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #6c6c6c;
+}
+.header-second {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin-left: 50px;
+}
+.header-second a {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #6c6c6c;
+}
+.header-third {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin-left: 420px;
+}
+.header-third a {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #6c6c6c;
+}      
+     .div {
+        width: 1200px;
+        height: 340px;
+        border:solid 1px gray;
+        display: table;
+        margin:0 auto;
+            }
+            .div1 {
+      display: table-cell;
+      width: 550px;
+      height:340px;
+      background: -webkit-linear-gradient(
+      top,bisque,orange,orangered
+     );
+    }
+    .div1 video {
+            vertical-align: top;
+            position: relative;
+            left: 45px;
+            top: -25px;
+        }
+    .div2 {
+      display: table-cell;
+      width: 450px;
+      height: 340px;
+      background: -webkit-linear-gradient(
+      top,bisque,orange,orangered
+     );
+    }
+    .div3 {
+        display: table-cell;
+      width: 200px;
+      height: 340px;
+      background: -webkit-linear-gradient(
+      top,bisque,orange,orangered
+     );
+     font-size: 28px;
+    }
+    .div4 {
+        height: 50px;
+        width: 100px;
+        position: relative;
+        top: -20px;
+        left:15px;
+        text-align: center;
+    }
+   .div5 {
+     height: 200px;
+     width: 180px;
+        position: relative;
+        top: -45px;
+        left: 6px;
+   }
+   .div6 {
+    height: 50px;
+        width: 100px;
+        position: relative;
+        top: 25px;
+        text-align: center;
+   }
+   .div7 {
+    height: 50px;
+        width: 100px;
+        position: relative;
+        top: -20px;
+        text-align: center;
+   }
+    #wenjian {
+     width: 1200px;
+     height: 150px;
+     background: -webkit-linear-gradient(
+      top,white,#c4c4c4,#a3a3a3
+     );
+     text-align: center;
+     margin:0px auto;
+ }
+ #lan {
+     width: 340px;
+     height: 260px;
+     border: 1px solid black;
+     position: relative;
+    top:10px;
+   left: 30px;
+ }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-first">
+        <a href="main.html">
+            首页
+        </a>
+    </div>
+    <div class="header-second">
+        <a href="kehu.html">
+            个人中心
+        </a>
+    </div>
+    <div class="header-third">
+        <a  href="#">
+            联系客服
+        </a>
+    </div>
+</header>
+  <div class="div">
+  <div class="div1"><div class="div7"><h2>视频</h2></div>
+   <video width="450" height="300" controls="controls">
+    <source src="视频简历.mp4" type="video/mp4" />
+    <source src="视频简历.mp4" type="video/ogg" />
+    <source src="视频简历.mp4" type="video/webm" />
+    <object data="视频简历.mp4" width="450" height="300">
+      <embed src="视频简历.swf" width="450" height="300"/>
+    </object>
+  <video>
+
+  </div>
+  <div class="div2"><div class="div4">
+    <h2>意见栏</h2><input id="lan" type="input" >
+</div></div>
+  <div class ="div3" >
+   <div class="div5">
+     <div class="div6"><h5>菜单</h5></div>
+      <ul>
+    <li><a  href ="about.html">企业服务</a></li>
+    <li><a  href ="noticeFrontList.jsp">公告</a></li>
+    <li><a href ="product.jsp">新闻资讯</a></li>
+    <li><a  href ="product.html">使用与帮助</a></li>
+    <li><a href ="index.html">用户协议与隐私政策</a></li>
+    <li><a  href ="contact.html" class ="last">更多</a></li>
+</ul>
+</div>
+</div>    
+</div>
+<form id="wenjian" name="uploadForm" method="POST" 
+        enctype="multipart/form-data" 
+        action="/ProcessServer/FileOperate/fileUpServlet"> 
+        Upload File1:<input type="file" name="file1" size="30"/> 
+        <input type="submit" name="submit" value="提交"> 
+        <input type="reset" name="reset" value="重置"> 
+     </form> 
+</body>
+</html>
